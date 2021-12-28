@@ -1,0 +1,22 @@
+{
+  "name": "pierreaverous_3_27122021",
+  "version": "1.0.0",
+  "description": "Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierreaverous/PierreAverous_3_27122021.git"
+  },
+  "author": "pierre averous",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pierreaverous/PierreAverous_3_27122021/issues"
+  },
+  "homepage": "https://github.com/pierreaverous/PierreAverous_3_27122021#readme",
+  "devDependencies": {
+    "sass": "^1.45.1"
+  }
+}
