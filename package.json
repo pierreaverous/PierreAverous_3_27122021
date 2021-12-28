@@ -16,6 +16,7 @@
     "url": "https://github.com/pierreaverous/PierreAverous_3_27122021/issues"
   },
   "homepage": "https://github.com/pierreaverous/PierreAverous_3_27122021#readme",
+  "Dependencies": {},
   "devDependencies": {
     "sass": "^1.45.1"
   }

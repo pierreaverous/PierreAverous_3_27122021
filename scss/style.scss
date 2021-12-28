@@ -1,5 +1,62 @@
 /* Tout les import ce font ici  */
-@import "./index";
-@import './variables';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
 
+/*# sourceMappingURL=style.css.map */
+
+body{
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  font-family:'Shrikhand', cursive;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+  padding: 0.3rem;
+  margin: 0px;
+  position: relative;
+  
+}
+
+main .ville{
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  
+}
+main .ville i{
+  font-size: 1.3rem;
+}
+
+.exploration{
+  text-align: center;
+}
+.exploration h2{
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.exploration p{
+  font-size: 1.5rem;
+}
+
+.exploration button{
+  background-image: linear-gradient(rgb(218, 109, 203), rgb(99, 0, 180));
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-weight: 300;
+  transition: all 200ms;
+  margin-top: 1.0rem;
+}
+.exploration button:hover{
+  transform: scale(1.02);
+  opacity: 0.9;
+
+}

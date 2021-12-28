@@ -1,62 +1,72 @@
 /* Tout les import ce font ici  */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
-
-/*# sourceMappingURL=style.css.map */
-
-body{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+body {
   margin: 0px;
   font-family: 'Roboto', sans-serif;
 }
 
-header{
-  font-family:'Shrikhand', cursive;
+header {
+  font-family: 'Shrikhand', cursive;
   text-align: center;
-  box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 0.3rem;
   margin: 0px;
   position: relative;
-  
 }
 
-main .ville{
+main .ville {
   background-color: #f3f3f3;
   text-align: center;
   padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1rem;
-  
 }
-main .ville i{
+
+main .ville i {
   font-size: 1.3rem;
 }
 
-.exploration{
+.exploration {
   text-align: center;
 }
-.exploration h2{
+
+.exploration h2 {
   margin-top: 2rem;
   font-size: 2rem;
 }
-.exploration p{
+
+.exploration p {
   font-size: 1.5rem;
 }
 
-.exploration button{
-  background-image: linear-gradient(rgb(218, 109, 203), rgb(99, 0, 180));
+.exploration button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#da6dcb), to(#6300b4));
+  background-image: linear-gradient(#da6dcb, #6300b4);
   color: white;
   font-size: 1.5rem;
   padding: 1rem 2rem;
   border: none;
   border-radius: 2rem;
-  box-shadow: 0 0 0.5rem rgb(0 0 0 / 50%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-weight: 300;
+  -webkit-transition: all 200ms;
   transition: all 200ms;
   margin-top: 1.0rem;
 }
-.exploration button:hover{
-  transform: scale(1.02);
-  opacity: 0.9;
 
+.exploration button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  opacity: 0.9;
 }
+/*# sourceMappingURL=style.css.map */
