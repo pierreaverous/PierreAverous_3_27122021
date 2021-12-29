@@ -1,0 +1,51 @@
+@import"../utils/zoom";
+@import"../utils/box-shadow";
+@import"../utils/variables";
+
+
+
+.card-fonctionnement {
+  counter-reset: step;
+    ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    @media (max-width: 1000px){
+      flex-direction: column;
+    }
+  }
+  & li{
+    position: relative;
+    &::before{
+      content: counter(step);
+      counter-increment: step;
+      background-color:$violet-primaire;
+      color: white;
+      width: 2* $card-cercle-icon;
+      height: 2 * $card-cercle-icon;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: $card-cercle-icon;
+      left: -$card-cercle-icon;
+    }
+    list-style-type: none;
+    background-color: #f6f6f6;
+    padding: 1.5rem 2rem;
+    flex-grow: 1;
+    border-radius: 1rem;
+    @include base-shadow;
+    &:hover {
+      @include zoom;
+    }
+    & i.fas {
+      margin-right: 1rem;
+      color:$lightgrey;
+      font-size: 1.5rem;
+    }
+    
+    
+  }
+}
