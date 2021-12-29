@@ -1,0 +1,85 @@
+@import"../utils/variables.scss";
+
+#home-page{
+
+  .menu{
+    background-color: #f6f6f6;
+    padding: 0 1rem 4rem;
+    h2{ 
+      padding: 1rem 1rem;
+    }
+
+    
+    .menu_card{
+      display: grid;
+      gap: 2rem;
+      grid-template-columns:repeat(2, 1fr);
+      @media (max-width:$breakpoint){
+        grid-template-columns:repeat(1, 1fr);
+      }
+      .new{
+        position: relative;
+      }
+      .new::before{
+        content: "Nouveau";
+        position: absolute;
+        height: 2rem;
+        width: 5rem;
+        background-color: $vert-tertiare;
+        color: darken($color: $vert-tertiare, $amount: 50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 1rem;
+        right: 1rem;
+      }
+      
+      
+    }
+    .card{
+      &__image{
+        border-radius: 1rem 1rem 0rem 0rem;
+        height: 15rem;
+        background-size: cover;
+      }
+      @for $i from 1 through 4 {
+        &__image-#{$i} {
+          background-image: url("../../assets/menu-#{$i}.jpg");
+  
+        }
+        
+      }
+      &__description{
+        position: relative;
+        background-color: white;
+        border-radius: 0 0 1rem 1rem;
+       /*  p{
+          margin: 0.5rem;
+          
+        } */
+        h3,p{
+          padding: 0.3rem;
+        }
+        i{
+          font-size: 2rem;
+          position: absolute;
+          right: 1rem;
+          top: 50%;
+          transform: translateY(-50%)
+        }
+        .fas{
+          color: transparent;
+          background-image:$background-image-linear;
+          background-clip: text;
+          -webkit-background-clip: text;
+          opacity: 0;
+          transition: all 200ms ease in ease-out;
+        }
+        &:hover .fas{
+          opacity: 1;
+          transform: translateY(-50%) scale(1.2);
+        }
+      } 
+    }
+  }
+}

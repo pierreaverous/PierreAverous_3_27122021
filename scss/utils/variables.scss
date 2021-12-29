@@ -1,12 +1,14 @@
 $background-grey: rgb(233, 233, 233);
 $lightgrey-background: rgb(248, 248, 248);
 $box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
-$background-image: linear-gradient(rgb(218, 109, 203), rgb(99, 0, 180));
+$background-image-linear: linear-gradient(#FF79DA,#9356DC );
 $font-text: 'Roboto', sans-serif;
-$font-titre: 'Shrikhand', cursive;
-$footer-background: rgb(48, 48, 48);
+$font-titre: 'Shrikhand', sans-serif;
+$footer-background: #353535;
 $violet-primaire:#9356DC;
 $rose-secondaire:#FF79DA ;
 $vert-tertiare:#99E2D0;
 $card-cercle-icon: 1rem;
 $lightgrey: #7e7e7e;
+$breakpoint:1000px;
+$lightergrey: #f6f6f6;

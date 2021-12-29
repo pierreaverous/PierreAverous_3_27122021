@@ -4,8 +4,11 @@
 @import"./layout/ville.scss";
 @import"./layout/exploration.scss";
 @import"./layout/card-fonctionnement.scss";
-@import"./utils/box-shadow.scss", "./utils/zoom.scss"
-
+@import"./utils/mixins.scss";
+@import"./layout/menu.scss";
+@import"./utils/variables.scss";
+@import"./layout/footer.scss";
+@import"./pages/restaurant.scss";
 
 
 

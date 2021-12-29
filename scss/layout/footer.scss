@@ -1,0 +1,16 @@
+@import"../utils/variables.scss";
+
+footer{
+ background-color: $footer-background;
+ padding: 1rem 2rem;
+ h2{
+   font-family: $font-titre;
+   color: white;
+   font-weight: 500;
+   padding: 1rem 0;
+ }
+ p{
+   color: white;
+   padding: 0.2rem;
+ }
+}

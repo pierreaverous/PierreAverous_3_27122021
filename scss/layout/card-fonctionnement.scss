@@ -1,21 +1,30 @@
-@import"../utils/zoom";
-@import"../utils/box-shadow";
+@import"../utils/mixins.scss";
 @import"../utils/variables";
 
 
 
 .card-fonctionnement {
   counter-reset: step;
+  margin: 2rem 0rem 2rem 0rem;
     ol {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    margin-top: 1rem;
     @media (max-width: 1000px){
       flex-direction: column;
+    }
+    
+  }
+  h2{
+    margin: 0rem 0rem 0rem -5rem;
+    @media (max-width:$breakpoint){
+      margin: 0;
     }
   }
   & li{
     position: relative;
+    font-weight: 500;
     &::before{
       content: counter(step);
       counter-increment: step;
@@ -28,7 +37,8 @@
       align-items: center;
       justify-content: center;
       position: absolute;
-      bottom: $card-cercle-icon;
+      bottom: 50%;
+      transform: translateY(+50%);
       left: -$card-cercle-icon;
     }
     list-style-type: none;
@@ -39,7 +49,12 @@
     @include base-shadow;
     &:hover {
       @include zoom;
+      background-color:#dcc8f3;
+      
+      
+    
     }
+    
     & i.fas {
       margin-right: 1rem;
       color:$lightgrey;
