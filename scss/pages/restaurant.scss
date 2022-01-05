@@ -58,99 +58,116 @@
     }
     border-radius: 2rem 2rem 0 0;
   } 
-  .menus{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1rem;
-    background-color:$lightergrey ;
-    padding-bottom: 2rem;
-    @media (max-width: $breakpoint){
-      grid-template-columns: 1fr;
-    }
-    h3{
-     text-transform: uppercase;
-     font-weight: 600;
-     position: relative;
-     &::after{
-       content: "";
-       height: 0.25rem;
-       width: 3rem;
-       top:1.5rem;
-       left: 0rem;
-       background-color:$vert-tertiare;
-       position: absolute;
-       
-     }
-    }
-    .menus__category{
-      background-color: $lightergrey;
-      
-      overflow: hidden;
-    }
-    }
+  
    .resto-main{
       padding: 0 2rem;
-      background-color:$lightergrey ;
-      .menu-item{
+      background-color:$lightergrey;
+      display: flex;
+      justify-content: center;
+      @media (max-width: $breakpoint){
         display: flex;
-        overflow: hidden;
-        margin: 0.5rem;
-        border-radius: 1rem;
-        @include base-shadow;
-          .menu-item__prix{
-            margin-left: auto;
-            font-weight: bold;
-            padding: 1rem;
-            display: flex;
-            align-items: flex-end;
-            
-          }
-          .menu-item__description{
-            padding: 1rem;
-            overflow: hidden;
-            h4, p{
-              overflow: hidden;
-              white-space: nowrap;
-              text-overflow: ellipsis;
-            }
-          }
-          .menu-item__check{
-            display: grid;
-            place-items: center;
-            flex-shrink: 0;
-            $button-width: 4rem;
-            background-color: $vert-tertiare;
-            height: 100%;
-            margin-right: -$button-width;
-            width:$button-width;
-            border-radius: 0 1rem 1rem 0;
-            transition: margin-right 0.5s;
-            i{
-              display: grid;
-              place-items: center;
-              background-color: white;
-              aspect-ratio: 1;
-              width: 2rem;
-              border-radius: 50%;
-              color: $vert-tertiare;
-            }
-          
-          }
-          &:hover{
-            cursor: pointer;
-            .menu-item__check{
-             margin-right: 0;
-            } 
-            i{
-            @include quarterspin;
-             animation: quarter-spin 0.5s;
-
-           }
-          }
+        flex-direction: column;
       }
+      .menus{
+        display: grid;
+        gap: 1rem;
+        background-color:$lightergrey ;
+        padding-bottom: 2rem;
+        @media (max-width: $breakpoint){
+          grid-template-columns: 1fr;
+        }
+        h3{
+         text-transform: uppercase;
+         margin-bottom: 2rem;
+         font-weight: 600;
+         position: relative;
+         &::after{
+           content: "";
+           height: 0.25rem;
+           width: 3rem;
+           top:1.5rem;
+           left: 0rem;
+           background-color:$vert-tertiare;
+           position: absolute;
+           
+         }
+        }
+        .menus__category{
+          background-color: $lightergrey;
+          overflow: hidden;
+          
+          .menu-item{
+            @for $i from 2 through 4{
+              &:nth-child(#{$i}){
+                animation-delay: $i *100ms;
+                
+              }
+             }
+            display: flex;
+            overflow: hidden;
+            margin: 0.5rem;
+            border-radius: 1rem;
+            @include base-shadow;
+            animation: apparition 1s;
+            animation-fill-mode: both;
+              .menu-item__prix{
+                margin-left: auto;
+                font-weight: bold;
+                padding: 1rem;
+                display: flex;
+                align-items: flex-end;
+                
+              }
+              .menu-item__description{
+                padding: 1rem;
+                overflow: hidden;
+                h4, p{
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                }
+              }
+              .menu-item__check{
+                display: grid;
+                place-items: center;
+                flex-shrink: 0;
+                $button-width: 4rem;
+                background-color: $vert-tertiare;
+                height: 100%;
+                margin-right: -$button-width;
+                width:$button-width;
+                border-radius: 0 1rem 1rem 0;
+                transition: margin-right 0.5s;
+                i{
+                  display: grid;
+                  place-items: center;
+                  background-color: white;
+                  aspect-ratio: 1;
+                  width: 2rem;
+                  border-radius: 50%;
+                  color: $vert-tertiare;
+                }
+              
+              }
+              &:hover{
+                cursor: pointer;
+                .menu-item__check{
+                 margin-right: 0;
+                } 
+                i{
+                 transform: rotate(360deg);
+                 transition: 0.5s;
+               }
+              }
+          }
+        }
+
+      }
+      
    }
    section.order{
      height: 20vh;
+     background-color:$lightergrey;
      display: grid;
      place-items: center;
      button{
