@@ -2,7 +2,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-@mixin zoom($zoom-level:1.02,$transformation: none) {
+@mixin zoom($zoom-level:1.02,$transformation: null) {
   transform:  $transformation scale($zoom-level);
 }
 

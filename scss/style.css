@@ -105,10 +105,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    align-items: center;
     margin-top: 1rem; }
     @media (max-width: 1000px) {
       .card-fonctionnement ol {
-        flex-direction: column; } }
+        flex-direction: column;
+        margin-left: -2rem; } }
   .card-fonctionnement h2 {
     margin: 0rem 0rem 0rem -5rem; }
     @media (max-width: 1000px) {
@@ -139,7 +141,7 @@ header {
       transform: translateY(50%);
       left: -1rem; }
     .card-fonctionnement li:hover {
-      transform: none scale(1.02);
+      transform: scale(1.02);
       background-color: #dcc8f3; }
     .card-fonctionnement li i.fas {
       margin-right: 1rem;
@@ -177,13 +179,13 @@ header {
     height: 15rem;
     background-size: cover; }
   #home-page .menu .card__image-1 {
-    background-image: url("../../assets/menu-1.jpg"); }
+    background-image: url("../assets/menu-1.jpg"); }
   #home-page .menu .card__image-2 {
-    background-image: url("../../assets/menu-2.jpg"); }
+    background-image: url("../assets/menu-2.jpg"); }
   #home-page .menu .card__image-3 {
-    background-image: url("../../assets/menu-3.jpg"); }
+    background-image: url("../assets/menu-3.jpg"); }
   #home-page .menu .card__image-4 {
-    background-image: url("../../assets/menu-4.jpg"); }
+    background-image: url("../assets/menu-4.jpg"); }
   #home-page .menu .card__description {
     position: relative;
     background-color: white;
@@ -206,7 +208,7 @@ header {
       background-clip: text;
       -webkit-background-clip: text;
       opacity: 0;
-      transition: all 200ms ease in ease-out; }
+      transition: all 200ms ease-out; }
     #home-page .menu .card__description:hover .fas {
       opacity: 1;
       transform: translateY(-50%) scale(1.2); }
@@ -274,7 +276,7 @@ footer {
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0;
-    transition: all 200ms ease in ease-out; }
+    transition: all 200ms ease-out; }
   #page-resto .resto_title:hover .fas {
     opacity: 1;
     transform: translateY(-50%) scale(1.2); }
@@ -291,7 +293,8 @@ footer {
     display: grid;
     gap: 1rem;
     background-color: #f6f6f6;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    padding: 0rem 1rem; }
     @media (max-width: 1000px) {
       #page-resto .resto-main .menus {
         grid-template-columns: 1fr; } }
@@ -314,6 +317,7 @@ footer {
       #page-resto .resto-main .menus .menus__category .menu-item {
         display: flex;
         overflow: hidden;
+        width: 20rem;
         margin: 0.5rem;
         border-radius: 1rem;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -352,7 +356,7 @@ footer {
             display: grid;
             place-items: center;
             background-color: white;
-            aspect-ratio: 1;
+            height: 2rem;
             width: 2rem;
             border-radius: 50%;
             color: #99E2D0; }
