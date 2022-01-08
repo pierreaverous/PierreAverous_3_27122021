@@ -96,14 +96,15 @@
         .menus__category{
           background-color: $lightergrey;
           overflow: hidden;
+          @for $i from 1 through 3{
+            .menu-item_#{$i}{
+              animation-delay: $i *100ms;
+              
+            }
+           }
           
           .menu-item{
-            @for $i from 2 through 4{
-              &:nth-child(#{$i}){
-                animation-delay: $i *100ms;
-                
-              }
-             }
+           
             display: flex;
             overflow: hidden;
             width: 20rem;
