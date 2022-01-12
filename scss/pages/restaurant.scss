@@ -82,6 +82,13 @@
          margin-bottom: 2rem;
          font-weight: 600;
          position: relative;
+         margin-top: 2rem;
+         @media (max-width:1023px)and (min-width:426px) {
+           justify-content: center;
+           display: flex;
+           
+         }
+
          &::after{
            content: "";
            height: 0.25rem;
@@ -90,6 +97,10 @@
            left: 0rem;
            background-color:$vert-tertiare;
            position: absolute;
+           @media (max-width:1023px)and (min-width:426px){
+             width: 100%;
+             top: 2rem;
+           }
            
          }
         }
@@ -107,7 +118,6 @@
            
             display: flex;
             overflow: hidden;
-            width: 20rem;
             margin: 0.5rem;
             border-radius: 1rem;
             @include base-shadow;

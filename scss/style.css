@@ -40,6 +40,8 @@ header {
   align-items: center;
   justify-content: center;
   gap: 1rem; }
+  .ville h2 {
+    font-size: 1.3rem; }
   .ville i {
     font-size: 1.3rem; }
 
@@ -302,7 +304,12 @@ footer {
       text-transform: uppercase;
       margin-bottom: 2rem;
       font-weight: 600;
-      position: relative; }
+      position: relative;
+      margin-top: 2rem; }
+      @media (max-width: 1023px) and (min-width: 426px) {
+        #page-resto .resto-main .menus h3 {
+          justify-content: center;
+          display: flex; } }
       #page-resto .resto-main .menus h3::after {
         content: "";
         height: 0.25rem;
@@ -311,6 +318,10 @@ footer {
         left: 0rem;
         background-color: #99E2D0;
         position: absolute; }
+        @media (max-width: 1023px) and (min-width: 426px) {
+          #page-resto .resto-main .menus h3::after {
+            width: 100%;
+            top: 2rem; } }
     #page-resto .resto-main .menus .menus__category {
       background-color: #f6f6f6;
       overflow: hidden; }
@@ -323,7 +334,6 @@ footer {
       #page-resto .resto-main .menus .menus__category .menu-item {
         display: flex;
         overflow: hidden;
-        width: 20rem;
         margin: 0.5rem;
         border-radius: 1rem;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
